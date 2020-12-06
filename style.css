@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.wizard-container {
+  width: 300px;
+  display: flex;
+  margin-bottom: 20px;
+}
+.step {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid hsl(240, 100%, 50%);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-line {
+  height: 3px;
+  border-radius: 1px;
+  width: 100%;
+  background-color: white;
+}
+
+.completed {
+  background-color: green;
+}
+
+button {
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#prev {
+  background-color: chartreuse;
+}
+
+#next {
+  background-color: coral;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
